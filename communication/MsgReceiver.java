@@ -64,9 +64,7 @@ public class MsgReceiver {
 				else if(place==0x31) {
 					state = State.error;
 				}
-				else {
-					System.out.println("	!!!!!!! 2nd Error");
-				}
+				
 				break;
 			case info:
 				int first = port.readByte() & 0xff;
